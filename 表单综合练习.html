@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单综合练习</title>
+</head>
+<body>
+    <form action="http://baidu.com">
+        <fieldset>
+            <!--fieldset可以为表单添加边框-->
+            <!--legend可以为边框添加标题-->
+            <legend>注册界面</legend>
+        <label>账号:<input type="text" name="userName"></label><br><br>
+        <label>密码:<input type="password" name="pwd"></label><br><br>
+        性别: <input type="radio" name="gender" value="mail">男
+             <input type="radio"  name="gender" value="famail">女
+             <input type="radio"  name="gender" checked value="select">保密<br><br>
+        爱好:
+        <input type="checkbox" name="sport" value="bask">篮球
+        <input type="checkbox" name="sport" value="scoor">足球
+        <input type="checkbox" name="sport" checked value="crazy">足浴<br><br>
+        个人简介:
+        <textarea cols="30" rows="10"></textarea><br><br>
+        <label>
+            生日:<input type="date" name="birthday">
+        </label><br><br>
+
+        <label>
+            邮箱:<input type="email" name="e-mail">
+        </label><br><br>
+
+        <label>
+            手机:<input type="number" name="mobile">
+        </label><br><br>
+
+        <input type="submit" value="注册">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        <input type="reset" value="清空">
+        </fieldset>
+    </form>
+
+</body>
+</html>
+

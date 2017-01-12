@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单标签</title>
+</head>
+<body>
+
+<!--
+1.什么是表单?
+表单就是专门用来收集用户信息的
+
+2.什么是元素表单?
+2.1什么是元素?
+在HTML中 标签/标记/元素都是指HTML中的标签
+例如: <a> a标签/a标记/a元素
+
+表单元素其实还是HTML中的一些标签,只不过这些标签比较特殊,在浏览器中所有的表单标签都有特殊的外观和默认的样式和功能
+
+3.表单的格式:
+<form>
+    <表单元素>
+</form>
+
+4.常见的表单元素
+input标签, input标签有一个type属性,这个属性有很多类型的取值,取值的不同就决定了input标签的功能和外观
+-->
+<form action="http://baidu.com">
+    <!--明文输入框-->
+    账号:<input type="text" name="userName"><br>
+    <!--暗文输入框-->
+    密码:<input type="password" name="passWord"><br>
+    <!--给输入框设置默认值-->
+    账号:<input type="text" value="请输入账号"><br>
+    <!--
+    1.单选框:默认情况下不会互斥,要想单选框互斥那么必须给每一个单选框标签都设置一个name熟悉,然后name属性还必须设置相同的值
+    2.要想默认选取某个框子,那么可以给input标签添加一个checked属性
+    -->
+    性别:
+    <input type="radio" name="gender" checked = "checked">男
+    <input type="radio" name="gender">女
+    <input type="radio" name="gender">保密<br>
+
+    <!--多选框-->
+    爱好
+    篮球:<input type="checkbox" checked>
+    足球:<input type="checkbox">
+    棒球:<input type="checkbox"><br>
+    <!--定义普通按钮:配合js完成某些操作-->
+    <input type="button" value="我是按钮">
+    <!--图片按钮-->
+    <input type="image" src="up.png">
+    <!--重置按钮:用于情况表单中已经填好的信息,如果想修改重置按钮的标题可以使用"value"属性-->
+    <input type="reset">
+    <!--
+    提交按钮:将表单中已经填写好的数据提交到服务器
+    注意点:
+    要想把表单中填写好的数据提交到远程服务器,必须具备2个条件
+    1.需要form添加一个action属性,通过这个属性指定需要提交到的服务器
+    2.需要给需要提交的服务器的表单元素添加一个name属性
+    -->
+    <input type="submit">
+
+    <!--
+    隐藏域
+    作用:配合提交按钮将一些数据摸摸的提交到服务器
+    隐藏域的作用主要通过Ajax实现
+    -->
+    <input type="hidden" name="cc" value="kkk">
+</form>
+
+</body>
+</html>

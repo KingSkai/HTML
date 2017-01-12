@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>img标签</title>
+</head>
+<body>
+    <!--
+    1.img标签的格式:<img src=>
+    2.属性
+    width:宽
+    height:高
+    title:当鼠标悬停在图片上时,需要弹出描述框中显示的内容
+    alt: 当选择的图片找不到时,显示的话
+    如果img标签没有指定需要显示的宽高,则会按照默认宽高显示
+    !若想等比例缩放,则指定宽高其中的一个值,另一个值则会等比例缩放
+    -- 相对路径 --
+    下级:image/TEST_IMAGE.png
+    同级:TEST_IMAGE.png
+    上级:../TEST_IMAGE.png--代表查找上一级的文件夹
+    -->
+    <img src="TEST_IMAGE.png" title="这是一张图片" alt="当前图片不存在">
+    <img src="TEST_IMAGE.png" width="300" height="475">
+    <img src="TEST_IMAGE.png" width="100">
+</body>
+</html>

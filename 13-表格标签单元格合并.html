@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签单元格合并</title>
+</head>
+<body>
+<!--
+    表格标签单元格合并(clospan属性):
+    1.水平方向上的单元格合并: 使用td标签里的clospan属性(注意点:由于将某一个单元格当多个单元格对待,所以要删除一些多余的单元格,才能正常的显示)
+    2.垂直方向上的单元格合并(rowspan):使用td标签的rowspan属性,注意点同上
+-->
+    <table bgcolor="black" width="500">
+        <tr bgcolor="white">
+            <td colspan="2">123</td>
+            <td>123</td>
+        </tr>
+        <tr bgcolor="white">
+            <td>123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+        <tr bgcolor="white">
+            <td  rowspan="2">123</td>
+            <td>123</td>
+            <td>123</td>
+        </tr>
+        <tr bgcolor="white">
+            <td>123</td>
+            <td>123</td>
+        </tr>
+    </table>
+</body>
+</html>

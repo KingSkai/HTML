@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>video标签的第二种</title>
+</head>
+<body>
+
+<!--
+<video>
+    <source src="" type="">
+    <source src="" type="">
+</video>
+
+由于视频数据非常非常重要,所以五大浏览器厂商都不愿意支持别人的视频格式,所以导致了没有一种视频格式是所有浏览器都支持了,所以W3C为了解决这个问题推出了第二种video标签的格式
+
+video标签的第二种格式存在的意义就是为了解决浏览器的适配问题,video支持3中视频格式,我们可以将三种格式都指定给浏览器,这样浏览器就会选择支持的格式播放
+
+注意点:虽然video标签的第二种格式虽然能指定所有浏览器都支持的视频格式,但是显然所有浏览器都通过video标签播放视频还有一个条件,就是浏览器必须支持HTML5标签,否则同样无法播放.我们可以通过一个JS框架来实现支持叫做html5media
+-->
+
+<video>
+    <source src="resouce/phfx_4KHD_VP9TestFootage.webm" type="video/webm">
+    <source src="resouce/phfx_4KHD_VP9TestFootage.mp4" type="video/mp4">
+    <source src="resouce/phfx_4KHD_VP9TestFootage.ogg" type="video/ogg">
+</video>
+
+</body>
+</html>
